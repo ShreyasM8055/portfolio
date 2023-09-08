@@ -1,0 +1,285 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('desktop.jpg'); /* Add the path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ... (rest of your CSS code) ... */
+/* Style the header container */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the header content */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the header text */
+.header-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the header title (your name) */
+.header-title {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px; /* Add some space between the text and image */
+}
+
+/* Style the header image */
+.header-image img {
+    border-radius: 80%; /* Makes the image round */
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    margin-top: 10px;
+}
+
+header {
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Change the color of the header title to white */
+.header-title {
+    color: white;
+    margin-left: 50px;
+}
+
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    color: #ffffff;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: #fff7f7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+}
+
+.project-card p {
+    margin-top: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: #555;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    animation: glow 2s infinite alternate;
+    border-radius: 20px;
+}
+
+.content-box {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.developer-text {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+.description-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: #ffffff;
+}
+.new-text {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* Add a brighter glowing effect to the container */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+    50% {
+        box-shadow: 0 0 30px rgb(201, 65, 235), 0 0 40px rgb(149, 0, 255);
+    }
+    100% {
+        box-shadow: 0 0 20px rgb(81, 0, 255);
+    }
+}
+/* Style the project containers */
+/* Style the project containers */
+/* Style the project containers */
+.project-container {
+    background-color: white; /* Set background color to white */
+    margin: 50px auto; /* Add spacing between the project containers and center them horizontally */
+    padding: 20px; /* Add padding for spacing within the container */
+    max-width: 600px; /* Set a maximum width for the containers */
+    text-align: center; /* Center-align the text horizontally */
+}
+
+/* Style the project cards */
+.project-card {
+    background-color: #333; /* Add background color */
+    padding: 20px; /* Add padding for spacing within the card */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    color: white; /* Set text color to white */
+}
+
+/* Style individual projects as needed */
+.project-card h3 {
+    font-size: 24px; /* Customize heading styles */
+}
+
+.project-card p {
+    font-size: 18px; /* Customize paragraph text styles */
+}
+
+/* Center-align text both horizontally and vertically inside the project containers */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the container height as needed */
+}
+
+/* Style the text elements */
+.project-container h3,
+.project-container p,
+.project-container a {
+    margin: 10px 0; /* Add margin for spacing */
+    color: black; /* Set text color to black */
+}
+/* Style the project boxes */
+.project-box {
+    display: flex;
+    flex-direction: row; /* Display the text and image in a row */
+    justify-content: space-between; /* Move the text and image to the ends of the container */
+    align-items: center; /* Center-align vertically */
+    padding: 20px;
+    margin: 20px;
+    background-color:transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: white;
+}
+
+/* Style the text containers inside the project boxes */
+.project-box-text {
+    flex: 1; /* Allow the text container to grow and take available space */
+    padding: 20px;
+}
+
+/* Style the images inside the project boxes */
+.project-box img {
+    max-width: 200px; /* Limit the image size */
+    margin-left: 20px; /* Add some spacing between the text and image */
+}
